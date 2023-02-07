@@ -87,6 +87,8 @@ a {
   
   font-size: 20px;
   font-family: sans-serif;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .header ul {
@@ -552,13 +554,14 @@ a {
   
   .about-image{
     width: 300px;
-    height: 50vh;
+    height: auto;
     margin-top: 40px;
     border-radius: 10px;
     background-color: #e3e0f3;
   }
   
   .about-description{
+    margin-top: 30px;
     width: 100%;
     padding: 2vw;
     text-align: start;
