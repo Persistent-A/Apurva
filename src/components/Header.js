@@ -1,5 +1,6 @@
 // icon
 import { MdOutlineDarkMode } from "react-icons/md"
+import logo from "../images/apurva-logo.png"
 
 import Hamburger from "./Hamburger"
 
@@ -7,7 +8,9 @@ const Header = () => {
 
   return (
     <nav className="header">
-        <div>A</div>
+        <div>
+          <img className="logo" src={logo} alt=''/>
+        </div>
         <Hamburger />
         <ul className="menu">
             <li><a href="#about-container" rel="norefferal">About</a></li>

@@ -1,8 +1,8 @@
 // import components
 // import Main from "./components/Main";
-// import About from "./components/About"
-// import Education from "./components/Education"
-// import Project from "./components/Project";
+import About from "./components/About"
+import Education from "./components/Education"
+import Project from "./components/Project";
 import Header from "./components/Header"
 import Home from  "./components/Home"
 // import Links from "./components/Links";
@@ -13,11 +13,11 @@ function App() {
     <div className="App">
       <Header />
       <Home/>
+      <About/>
       {/* <Mail /> */}
       {/* <Links /> */}
       {/* <Main /> */}
-      {/* <About/>
-      <Education/>
+      {/* <Education/>
       <Project /> */}
     </div>
   );

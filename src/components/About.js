@@ -1,20 +1,45 @@
-import profile_image from "../images/profile_image.png"
+import profile_image from "../images/about_img.png"
+import {BiRightArrow} from "react-icons/bi"
 
 const About = () => {
-
-    const TiltSection = () => {
-        const aboutCard = document.querySelector('.about')
-        aboutCard.className += ' tilt'
-    }
-
   return (
     <div className="about-container" id="about-container">
-        <div options={{max: 10 }} className="about" onMouseOver={TiltSection}>
-            <div className="about-description">This is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.</div>
-            <div className="about-image-container">
-              <img className="about-image" src={profile_image} alt=""></img>
+      <div className="about-intro">
+        <p>About Me</p>
+        <p>My Introduction</p>
+      </div>
+      <div className="about">
+          <div className="about-image-container">
+            <img className="about-image" src={profile_image} alt=""></img>
+          </div>
+          <div className="about-description">
+            <div>Technologies, which render control, freedom of expression and a canvas to express ideas innovatively intrigue me the most.
+              Web Development is a perfect tool of the generation to complement my enthusiasm. 
             </div>
-        </div>
+            <div>
+              <div className="skills-container">Few technologies I have been working with recently:</div>
+
+              <div className="skills">
+                  <div>
+                      <p><BiRightArrow className="skill-arrow"/>HTML</p>
+                      <p><BiRightArrow className="skill-arrow"/>CSS</p>
+                      <p><BiRightArrow className="skill-arrow"/>JavaScript</p>
+                  </div>
+                  <div>
+                      <p><BiRightArrow className="skill-arrow"/>Python</p>
+                      <p><BiRightArrow className="skill-arrow"/>React</p>
+                      <p><BiRightArrow className="skill-arrow"/>Node JS</p>
+                  </div>
+                  <div>
+                      <p><BiRightArrow className="skill-arrow"/>MongoDB</p>
+                      <p><BiRightArrow className="skill-arrow"/>GitHub</p>
+                      <p><BiRightArrow className="skill-arrow"/>VS Code</p>
+                  </div>
+              </div>
+            </div>  
+            <div className="resume">Download CV</div>
+          </div> 
+      </div>
     </div>
   )
 }

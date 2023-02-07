@@ -12,7 +12,6 @@ const Links = () => {
         <a href="https://www.instagram.com/_apurva__sharma__/" target="_blank" rel="noopener noreferrer"><BsInstagram/></a>
         <a href="https://twitter.com/__ApurvaSharma" target="_blank" rel="noopener noreferrer"><BsTwitter/></a>
       </div>
-      <hr className="h-rule"/>
     </div>
   )
 }
