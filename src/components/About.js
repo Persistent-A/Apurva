@@ -14,7 +14,8 @@ const About = () => {
           </div>
           <div className="about-description">
             <div>Technologies, which render control, freedom of expression and a canvas to express ideas innovatively intrigue me the most.
-              Web Development is a perfect tool of the generation to complement my enthusiasm. 
+              Web Development is a perfect tool of the generation to complement my enthusiasm. I am fascinated towards geometrical arrangement of 
+              elements and love to get indulged in pouring details inside them.
             </div>
             <div>
               <div className="skills-container">Few technologies I have been working with recently:</div>
