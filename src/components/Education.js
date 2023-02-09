@@ -3,7 +3,8 @@
 const Education = () => {
   return (
     <div className="education-container">
-        <p>EDUCATION</p>
+        <p className="education-title">EDUCATION</p>
+        
         <div className="education">
             <div className="college1">
                 <p>Internet Programming</p>

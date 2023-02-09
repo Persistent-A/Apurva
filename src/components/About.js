@@ -9,9 +9,6 @@ const About = () => {
         <p>My Introduction</p>
       </div>
       <div className="about">
-          <div className="about-image-container">
-            <img className="about-image" src={profile_image} alt=""></img>
-          </div>
           <div className="about-description">
             <div>Technologies, which render control, freedom of expression and a canvas to express ideas innovatively intrigue me the most.
               Web Development is a perfect tool of the generation to complement my enthusiasm. I am fascinated towards geometrical arrangement of 
@@ -39,7 +36,8 @@ const About = () => {
               </div>
             </div>  
             <div className="resume">Download CV</div>
-          </div> 
+          </div>
+          <img className="about-image" src={profile_image} alt=""></img>
       </div>
     </div>
   )
