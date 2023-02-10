@@ -1,32 +1,26 @@
-// import hmsMobile from "../images/hms_mobile.png"    
-// import hmsDesktop from "../images/hms-background.png"
-// import forDoctors from "../images/Fordoctors.png"
+import hmsMobile from "../images/hms_mobile.png"    
+import hmsDesktop from "../images/hms-background.png"
+import forDoctors from "../images/Fordoctors.png"
 
 // icons
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs"
 
-const Project = (src, src1, src2, alt, p_name, p_description, git_link) => {
+const Project = () => {
   return (
-    <div className="project-container">
-        <div className="project">
-            <div className="project-title">
-                <p>Some of my Works</p>
-                <hr/>
-            </div>
-            <div className="project-images-container">
-                <p>{p_name}</p>
-                <img className="for-doctors" src={src} alt={alt}/>
-                <img className="desktop-view" src={src1} alt={alt}/>
-                <img className="mobile-view" src={src2} alt={alt}/>
-                
-                <div className="project-description">
-                    <div>
-                        {p_description}
-                    </div>
-                    <div className="project-links">
-                    <BsBoxArrowUpRight />
-                    <a href={git_link} target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-                    </div>
+    <div className="project">
+        <div>
+            <img className="for-doctors" src={forDoctors} alt=''/>
+            <img className="mobile-view" src={hmsMobile} alt=''/>
+        </div>
+        <div>
+            <img className="desktop-view" src={hmsDesktop} alt=''/>
+            <div className="project-description">
+                <div>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </div>
+                <div className="project-links">
+                <BsBoxArrowUpRight />
+                <BsGithub />
                 </div>
             </div>
         </div>
