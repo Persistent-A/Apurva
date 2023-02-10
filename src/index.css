@@ -31,6 +31,7 @@ a {
   display: none;
   flex-direction: column;
   align-items: flex-end;
+  height: 40px;
 }
 
 .hamburger-icon > * {
@@ -538,7 +539,6 @@ a {
   .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 1px solid black;
     position: fixed;
@@ -547,8 +547,27 @@ a {
     height: 100vh;
     width: 70vw;
     background-color: #6c55e0;
-
+    padding-top: 10vh;
     transition: all 0.5s;
+  }
+
+  .menu > li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .menu > li:hover {
+    color: #404a4f;
+  }
+
+  .menu > * {
+    margin-bottom: 30px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .menu * a {
+    color: whitesmoke;
   }
 
   .menu-toggle{
