@@ -164,7 +164,7 @@ a {
 .about-container {
   width: 840px;
   margin: 0 auto;
-  height: 90vh;
+  min-height: 90vh;
   padding: 12vh 0;
 }
 
@@ -332,7 +332,7 @@ a {
 .project {
   display: flex;
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .project > div:nth-of-type(1) {
@@ -504,10 +504,11 @@ a {
   /* PROJECT SECTION */
   .project {
     display: flex;
-    height: 100vh;
-    border: 1px solid red;
+    /* height: 100vh; */
+    /* border: 1px solid red; */
     width: 80%;
     margin: 0 auto;
+    position: relative;
   }
 
   .project > div:nth-of-type(1) {
@@ -522,19 +523,14 @@ a {
     height: 277.77px;
     object-fit: contain;
 
-    position: relative;
-    left: 50px;
-    top: 120px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 1;
   }
 
   .mobile-view {
-    width: 277.77px;
-    height: 277.77px;
-    object-fit: contain;
-    
-    bottom: -30px;
-    left: 150px;
-    z-index: 1;
+    display: none;
   }
 
   .desktop-view {
@@ -542,21 +538,23 @@ a {
     height: 277.77px;
     object-fit: contain;
 
-    position: relative;
-    right: 30px;
-    top: 20px;
+    position: absolute;
+    left: 40%;
+    top: 5%;
   }
 
   .project-description {
     width: 400px;
     background-color:rgb(85, 81, 81);
     color: white;
-    padding: 20px;
+    padding: 0px;
 
-    right: 30px;
-    top: 150px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
     z-index: 2;
     border-radius: 5px;
+    padding: 25px;
   }
 
   .project-links {
@@ -574,12 +572,14 @@ a {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px){
+
   .about-description > div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
 }
 
 /* MOBILE VIEW */
@@ -751,6 +751,72 @@ a {
     font-size: 8px;
     margin-right: 5px;
   }
+
+  /* PROJECT SECTION */
+  .project {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .project > div:nth-of-type(1) {
+    width: 50%;
+    background-color: #aea6d8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .for-doctors {
+    width: 70%;
+    height: 277.77px;
+    object-fit: contain;
+
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 1;
+  }
+
+  .mobile-view {
+    display: none;
+  }
+
+  .desktop-view {
+    width: 70%;
+    height: 277.77px;
+    object-fit: contain;
+
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    overflow-x: hidden;
+  }
+
+  .project-description {
+    width: 90%;
+
+    position: absolute;
+    left: 5%;
+    top: 55%;
+    z-index: 2;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  .project-links {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-around;
+  }
+
+  .project-links > * {
+    font-size: 20px;
+  }
 }
 
 /* Responsiveness TO Samsung Galaxy Fold */
@@ -770,9 +836,6 @@ a {
 
 }
 
-@media only screen and (max-width: 1078px){
-  
-}
 
 
 
