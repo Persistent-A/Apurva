@@ -532,6 +532,10 @@ a {
 
   /* HAMBURGER SECTION */
 
+  .header {
+    padding: 10px;
+  }
+
   .hamburger-icon {
     display: flex;
   }
@@ -540,14 +544,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     position: fixed;
     right: -100%;
     top: 0;
     height: 100vh;
     width: 70vw;
     background-color: #6c55e0;
-    padding-top: 10vh;
+    padding-top: 15vh;
     transition: all 0.5s;
   }
 
@@ -573,6 +576,10 @@ a {
   .menu-toggle{
     right: 0;
     transition: all 0.5s;
+  }
+
+  .cross {
+    padding-top: 10px;
   }
 
   .cross > *{
