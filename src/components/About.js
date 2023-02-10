@@ -15,27 +15,30 @@ const About = () => {
               elements and love to get indulged in pouring details inside them.
             </div>
             <div>
-              <div className="skills-container">Few technologies I have been working with recently:</div>
+              <img className="about-image-mobile" src={profile_image} alt=""></img>
+              <div>
+                <div className="skills-container">Few technologies I have been working with recently:</div>
 
-              <div className="skills">
-                  <div>
-                      <p><BiRightArrow className="skill-arrow"/>HTML</p>
-                      <p><BiRightArrow className="skill-arrow"/>CSS</p>
-                      <p><BiRightArrow className="skill-arrow"/>JavaScript</p>
-                  </div>
-                  <div>
-                      <p><BiRightArrow className="skill-arrow"/>Python</p>
-                      <p><BiRightArrow className="skill-arrow"/>React</p>
-                      <p><BiRightArrow className="skill-arrow"/>Node JS</p>
-                  </div>
-                  <div>
-                      <p><BiRightArrow className="skill-arrow"/>MongoDB</p>
-                      <p><BiRightArrow className="skill-arrow"/>GitHub</p>
-                      <p><BiRightArrow className="skill-arrow"/>VS Code</p>
-                  </div>
+                <div className="skills">
+                    <div>
+                        <p><BiRightArrow className="skill-arrow"/>HTML</p>
+                        <p><BiRightArrow className="skill-arrow"/>CSS</p>
+                        <p><BiRightArrow className="skill-arrow"/>JavaScript</p>
+                    </div>
+                    <div>
+                        <p><BiRightArrow className="skill-arrow"/>Python</p>
+                        <p><BiRightArrow className="skill-arrow"/>React</p>
+                        <p><BiRightArrow className="skill-arrow"/>Node JS</p>
+                    </div>
+                    <div>
+                        <p><BiRightArrow className="skill-arrow"/>MongoDB</p>
+                        <p><BiRightArrow className="skill-arrow"/>GitHub</p>
+                        <p><BiRightArrow className="skill-arrow"/>VS Code</p>
+                    </div>
+                </div>  
+                <div className="resume">Download CV</div>
               </div>
-            </div>  
-            <div className="resume">Download CV</div>
+              </div>
           </div>
           <img className="about-image" src={profile_image} alt=""></img>
       </div>

@@ -1,11 +1,11 @@
-import hmsMobile from "../images/hms_mobile.png"    
-import hmsDesktop from "../images/hms-background.png"
-import forDoctors from "../images/Fordoctors.png"
+// import hmsMobile from "../images/hms_mobile.png"    
+// import hmsDesktop from "../images/hms-background.png"
+// import forDoctors from "../images/Fordoctors.png"
 
 // icons
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs"
 
-const Project = () => {
+const Project = (src, src1, src2, alt, p_name, p_description, git_link) => {
   return (
     <div className="project-container">
         <div className="project">
@@ -14,18 +14,18 @@ const Project = () => {
                 <hr/>
             </div>
             <div className="project-images-container">
-                <p>Hospital Management System</p>
-                <img className="for-doctors" src={forDoctors} alt=''/>
-                <img className="desktop-view" src={hmsDesktop} alt=''/>
-                <img className="mobile-view" src={hmsMobile} alt=''/>
+                <p>{p_name}</p>
+                <img className="for-doctors" src={src} alt={alt}/>
+                <img className="desktop-view" src={src1} alt={alt}/>
+                <img className="mobile-view" src={src2} alt={alt}/>
                 
                 <div className="project-description">
                     <div>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        {p_description}
                     </div>
                     <div className="project-links">
                     <BsBoxArrowUpRight />
-                    <BsGithub />
+                    <a href={git_link} target="_blank" rel="noopener noreferrer"><BsGithub /></a>
                     </div>
                 </div>
             </div>
