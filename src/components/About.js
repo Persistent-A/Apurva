@@ -1,4 +1,4 @@
-import profile_image from "../images/about_img.png"
+import profile_image from "../images/self/about_img.png"
 import {BiRightArrow} from "react-icons/bi"
 
 const About = () => {

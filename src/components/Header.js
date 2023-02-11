@@ -1,6 +1,6 @@
 // icon
 import { MdOutlineDarkMode } from "react-icons/md"
-import logo from "../images/apurva-logo.png"
+import logo from "../images/self/apurva-logo.png"
 
 import Hamburger from "./Hamburger"
 
