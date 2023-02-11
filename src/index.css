@@ -488,6 +488,13 @@ a {
 .mail_link:hover {
   color:#5845ba;
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 961px) {
+  .project {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 /* TABLET VIEWS */
 
 @media only screen and (max-width: 960px) and (min-width: 601px) {
@@ -534,7 +541,7 @@ a {
   }
 
   .project > div:nth-of-type(1) {
-    width: 50%;
+    width: 60%;
     background-color: #aea6d8;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -547,12 +554,18 @@ a {
 
     position: absolute;
     left: 5%;
-    top: 20%;
+    top: 28%;
     z-index: 1;
   }
 
   .mobile-view {
-    display: none;
+    /* position: absolute;
+    width: 277.77px;
+    height: 277.77px;
+    object-fit: contain;
+    top: 35%;
+    left: 35%; */
+    display:none;
   }
 
   .desktop-view {
@@ -561,19 +574,19 @@ a {
     object-fit: contain;
 
     position: absolute;
-    left: 40%;
-    top: 5%;
+    left: 55%;
+    top: 13%;
   }
 
   .project-description {
-    width: 400px;
+    width:90%;
     background-color:rgb(85, 81, 81);
     color: white;
     padding: 0px;
 
     position: absolute;
-    left: 20%;
-    top: 50%;
+    left: 10%;
+    top: 58%;
     z-index: 2;
     border-radius: 5px;
     padding: 25px;
