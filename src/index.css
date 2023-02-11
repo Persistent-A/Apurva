@@ -333,6 +333,13 @@ a {
   margin: 0 auto;
 }
 
+.project div:nth-of-type(1) > h1 {
+  text-align: start;
+  padding: 30px;
+  font-family: san fransisco, sans-serif;
+  color:#5845ba;
+}
+
 .project > div:nth-of-type(1) {
   width: 50%;
   background-color: #aea6d8;
@@ -348,6 +355,9 @@ a {
   position: relative;
   left: 50px;
   top: 120px;
+
+
+  transition: top 1s;
 }
 
 .mobile-view {
@@ -358,6 +368,8 @@ a {
   bottom: 100px;
   left: 250px;
   z-index: 1;
+
+  transition: bottom 1s;
 }
 
 .desktop-view {
@@ -368,6 +380,14 @@ a {
   position: relative;
   left: -30px;
   top: 20px;
+
+  transition: top 1s;
+}
+
+.move {
+  top: 0;
+  bottom: 0;
+  transition: top 1s;
 }
 
 .project-description {
@@ -793,6 +813,9 @@ a {
     width: 95%;
     margin: 0 auto;
     position: relative;
+  }
+  .project div:nth-of-type(1) > h1 {
+    padding: 10px;
   }
 
   .project > div:nth-of-type(1) {

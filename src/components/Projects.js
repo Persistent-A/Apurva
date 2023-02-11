@@ -22,14 +22,30 @@ import ttMobile from "../images/tictactoe/tttMobile.png"
 import Work from "./Work"
 
 // Hooks
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 // Icons
 import { BsCaretLeftFill,BsFillCaretRightFill } from 'react-icons/bs'
 
 const Projects = () => {
-    const [projectIndex, setProjectIndex] =useState(0)
-    console.log(projectIndex)
+    const [projectIndex, setProjectIndex] = useState(0)
+
+    useEffect( ()=> {
+        const mainImage = document.querySelector('.for-doctors')
+        const mobileView = document.querySelector('.mobile-view')
+        const desktopView = document.querySelector('.desktop-view')
+        mainImage.className += ' move'
+        mobileView.className += ' move'
+        desktopView.className += ' move'
+        setTimeout(() => {
+            const mainImage = document.querySelector('.for-doctors')
+            const mobileView = document.querySelector('.mobile-view')
+            const desktopView = document.querySelector('.desktop-view')
+            mainImage.className = 'for-doctors'
+            mobileView.className = 'mobile-view'
+            desktopView.className = 'desktop-view'
+        }, 1000)
+    }, [projectIndex])
 
     const projects = [
         {
