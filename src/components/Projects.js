@@ -25,7 +25,7 @@ import Work from "./Work"
 import { useEffect, useState } from "react"
 
 // Icons
-import { BsCaretLeftFill,BsFillCaretRightFill } from 'react-icons/bs'
+import { BsChevronDoubleLeft,BsChevronDoubleRight } from 'react-icons/bs'
 
 const Projects = () => {
     const [projectIndex, setProjectIndex] = useState(0)
@@ -54,7 +54,7 @@ const Projects = () => {
             src2: hmsMobile,
             alt:'hms',
             p_name: 'Hospital Management System',
-            p_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'",
+            p_description: "Application is able to store patient details in a database using MongoDB, which is used to book appointments in hospitals, further, those appointments are retrieved by respective field doctors to check for the schedules after logging in.",
             web_link: 'https://hms-7lax.onrender.com',
             git_link: 'https://github.com/Persistent-A/MERN',
         },
@@ -64,17 +64,17 @@ const Projects = () => {
             src2: bookMobile,
             alt:'book',
             p_name: 'bookArena',
-            p_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'",
+            p_description: "CRUD operations concerning information about books can be performed on the app. The app can be used to filter the books in the library based on price range.",
             web_link: 'https://hms-7lax.onrender.com',
             git_link: 'https://github.com/Persistent-A/MERN',
         },
         {
-            src: wdBack,
-            src1: wdDesk,
+            src: wdDesk,
+            src1: wdBack,
             src2: wdMobile,
             alt:'weDesign',
             p_name: 'WeDesign',
-            p_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'",
+            p_description: "Built a sample website having different layouts such as a carousel drawer.",
             web_link: 'https://hms-7lax.onrender.com',
             git_link: 'https://github.com/Persistent-A/MERN',
         },
@@ -84,7 +84,7 @@ const Projects = () => {
             src2: ttMobile,
             alt:'TicTacToe',
             p_name: 'Tic Tac Toe    ',
-            p_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'",
+            p_description: "The game enables users to change player2 mode as well as player name change, beside these it also tracks the count of game played and draw count.",
             web_link: 'https://hms-7lax.onrender.com',
             git_link: 'https://github.com/Persistent-A/MERN',
         }
@@ -104,7 +104,7 @@ const Projects = () => {
 
   return (
     <div className="work">
-        <div onClick={moveBackWard}><BsCaretLeftFill/></div>
+        <div onClick={moveBackWard}><BsChevronDoubleLeft/></div>
         <div>
             <Work
             alt={projects[projectIndex].alt}
@@ -117,7 +117,7 @@ const Projects = () => {
             git_link={projects[projectIndex].git_link}
             />
         </div>
-        <div onClick={moveForward}><BsFillCaretRightFill/></div>
+        <div onClick={moveForward}><BsChevronDoubleRight/></div>
     </div>
   )
 }
